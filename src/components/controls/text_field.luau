@@ -136,7 +136,7 @@ return function(props: props)
 				
 					BackgroundTransparency = 1,
 				
-					changed("Text", props.text),
+					changed("Text", props.update_text),
 					changed("CursorPosition", function(cursor)
 						canvas_position(
 							TextService:GetTextSize(

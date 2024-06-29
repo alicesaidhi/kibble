@@ -12,7 +12,7 @@ local read = vide.read
 
 type props = {
 
-	text: string,
+	text: (() -> string) | string?,
 	visible: (() -> boolean)?,
 	position: (() -> UDim2) | UDim2?,
 	anchor_point: (() -> Vector2) | Vector2?
@@ -22,7 +22,7 @@ type props = {
 return function(props: props)
 
 	local hovering = source(false)
-	local visible = delay(2, hovering)
+	local visible = delay(1, hovering)
 
 	local function is_visible()
 		return hovering() and visible() or read(props.visible)
