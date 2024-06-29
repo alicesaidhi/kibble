@@ -44,7 +44,7 @@ return function(props: props)
 		Name = "BaseButton",
 
 		Size = props.size or UDim2.fromOffset(200, 50),
-		Position = props.size or UDim2.fromScale(0, 0),
+		Position = props.position or UDim2.fromScale(0, 0),
 		AnchorPoint = props.anchor_point or Vector2.new(0, 0),
 
 		BackgroundTransparency = 1,

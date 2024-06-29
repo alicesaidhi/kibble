@@ -23,19 +23,27 @@ return function(props: props)
 
 	layout.activated = props.activated
 
-	table.insert(layout, create "TextLabel" {
+	table.insert(layout, {
 
-		Name = "Text",
+		create "TextLabel" {
 
-		Size = UDim2.fromScale(0, 1),
-		Position = UDim2.fromScale(0.5, 0.5),
-		AnchorPoint = Vector2.new(0.5, 0.5),
-
-		Text = props.text,
-		TextColor3 = props.foreground_color or scheme:consume().Color.Text.Primary,
-		TextTransparency = props.foreground_opacity,
-		Font = scheme:consume().Typography.Button.Font,
-		TextSize = scheme:consume().Typography.Button.Size,
+			Name = "Text",
+			
+			AutomaticSize = Enum.AutomaticSize.X,
+	
+			Size = UDim2.fromScale(0, 1),
+			Position = UDim2.fromScale(0.5, 0.5),
+			AnchorPoint = Vector2.new(0.5, 0.5),
+	
+			BackgroundTransparency = 1,
+	
+			Text = props.text,
+			TextColor3 = props.foreground_color or scheme:consume().Color.Text.Primary,
+			TextTransparency = props.foreground_opacity,
+			Font = scheme:consume().Typography.Button.Font,
+			TextSize = scheme:consume().Typography.Button.Size,
+	
+		},
 
 	})
 

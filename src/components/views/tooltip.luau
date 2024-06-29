@@ -22,7 +22,7 @@ type props = {
 return function(props: props)
 
 	local hovering = source(false)
-	local visible = delay(1, hovering)
+	local visible = delay(2, hovering)
 
 	local function is_visible()
 		return hovering() and visible() or read(props.visible)
