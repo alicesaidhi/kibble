@@ -8,3 +8,5 @@
 Packages
 site
 .DS_Store
+
+/sourcemap.json

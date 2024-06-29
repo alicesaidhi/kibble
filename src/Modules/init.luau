@@ -1,7 +1,6 @@
 return {
-    Scheme = require(script.Scheme),
-    Constants = require(script.Constants),
-    EnumList = require(script.EnumList),
-    Icons = require(script.Icons),
-    SharedStates = require(script.SharedStates)
+    scheme = require(script.scheme),
+    constants = require(script.constants),
+    icons = require(script.icons),
+    context = require(script.context)
 }

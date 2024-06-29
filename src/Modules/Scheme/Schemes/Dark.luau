@@ -47,4 +47,5 @@ return {
 		},
 		Divider = Color3.fromRGB(60, 60, 60),
 	},
+	Accent = Color3.fromRGB(255, 134, 200),
 }

@@ -3,11 +3,11 @@
 registry = "test"
 
 [[package]]
-name = "7kayoh/lydie"
+name = "alicesaidhi/kibble"
 version = "0.1.0"
-dependencies = [["Fusion", "elttob/fusion@0.2.0"]]
+dependencies = [["vide", "aloroid/vide-with-types@0.2.3"]]
 
 [[package]]
-name = "elttob/fusion"
-version = "0.2.0"
+name = "aloroid/vide-with-types"
+version = "0.2.3"
 dependencies = []
